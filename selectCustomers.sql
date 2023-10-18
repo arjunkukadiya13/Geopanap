@@ -1,0 +1,1 @@
+select id, name, tel_number , gmail_account_id, (select count(*) as "number_of_leases" from leases l where l.customer_id=c.id) from customers c;

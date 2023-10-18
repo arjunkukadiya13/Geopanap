@@ -1,0 +1,1 @@
+select note, is_current,created_at from lease_notes where lease_id={{globals.urlparams.leaseId}} order by created_at desc;

@@ -1,0 +1,1 @@
+SELECT * FROM minerals WHERE deleted_at IS NULL;

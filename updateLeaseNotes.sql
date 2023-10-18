@@ -1,0 +1,1 @@
+ UPDATE lease_notes SET is_current = false WHERE id = (SELECT max(id) FROM lease_notes WHERE lease_id= {{variables.viewLeasesId}} );

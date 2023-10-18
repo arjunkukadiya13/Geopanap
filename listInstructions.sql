@@ -1,0 +1,1 @@
+select id, path, round(size::int/1024.0, 1) as "size", TO_CHAR(created_at, 'YYYY-MM-DD') as "created_at" from instructions order by created_at desc;

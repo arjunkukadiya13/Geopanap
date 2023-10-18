@@ -1,0 +1,1 @@
+select id, name from minerals where {{variables.searchKeyMinerals}}::text like '%{{variables.searchTermMinerals}}%' AND deleted_at IS NULL;

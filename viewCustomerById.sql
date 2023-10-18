@@ -1,0 +1,1 @@
+select c.id as "id", c.name as "name", c.tel_number as "tel_number", ga.email as "email", ga.id as "gmail_account_id", pgp_sym_decrypt(ga.password, '%%client.GEOPANAP_ENCRYPTION_KEY%%', 'cipher-algo=aes256') as "password" from customers c inner join gmail_accounts ga on c.gmail_account_id = ga.id  where c.id={{variables.viewCustomerId}};

@@ -1,0 +1,2 @@
+SELECT l.id,l.name as "lease_name",type,c.name,c.tel_number,TO_CHAR(expiry_date,'YYYY-MM-DD') as "expiry_date", survey_number, taluka, villege, city, area,mineral_id,customer_id
+FROM leases l inner join customers c on l.customer_id=c.id WHERE l.id = {{variables.viewLeasesId}} ;
