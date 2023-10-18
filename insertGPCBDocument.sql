@@ -1,0 +1,1 @@
+insert into gpcb_documents (gpcb_id, path, size, mime_type, created_at) values({{variables.viewGPCBId}}, '{{variables.viewGPCBDocumentPath}}', '{{variables.viewGPCBDocumentSize}}', '{{variables.viewGPCBDocumentMimeType}}', current_timestamp);

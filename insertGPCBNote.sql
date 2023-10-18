@@ -1,0 +1,2 @@
+update gpcb_notes set is_current=false where gpcb_id ={{globals.urlparams.gpcbId}};
+insert into gpcb_notes (gpcb_id, note, is_current, created_at) values({{globals.urlparams.gpcbId}}, '{{variables.insertGPCBNoteText}}', true, current_timestamp);

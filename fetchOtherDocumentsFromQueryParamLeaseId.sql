@@ -1,0 +1,1 @@
+select id, lease_id, path, round(size::int/1024.0, 1) as "size", mime_type, created_at from other_documents where lease_id={{globals.urlparams.leaseId}};

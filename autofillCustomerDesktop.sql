@@ -1,0 +1,1 @@
+select id from customers where id = '{{components.table1.selectedRow.id}}';

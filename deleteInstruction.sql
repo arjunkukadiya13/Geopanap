@@ -1,0 +1,1 @@
+delete from instructions where id={{variables.deleteInstructionId}};

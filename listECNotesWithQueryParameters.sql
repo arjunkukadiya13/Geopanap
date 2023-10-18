@@ -1,0 +1,1 @@
+select note, is_current, created_at from ec_notes en where ec_id = {{globals.urlparams.ecId}};

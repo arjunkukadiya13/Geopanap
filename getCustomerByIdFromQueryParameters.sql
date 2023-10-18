@@ -1,0 +1,1 @@
+select id, name, tel_number, created_at, updated_at from customers where id={{globals.urlparams.customerId}};

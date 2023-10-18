@@ -1,0 +1,1 @@
+update gmail_accounts set email = '{{components.form1.data.inp_Eemail.value}}' where email = '{{variables.customerdata1.email}}';

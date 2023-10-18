@@ -1,0 +1,1 @@
+insert into instructions (path, size, mime_type, created_at) values('{{variables.uploadInstructionDocumentPath}}', '{{variables.uploadInstructionDocumentSize}}', '{{variables.uploadInstructionDocumentMimeType}}', current_timestamp);

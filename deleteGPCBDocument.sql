@@ -1,0 +1,1 @@
+delete from gpcb_documents where id={{variables.gpcbDocumentDeleteId}};

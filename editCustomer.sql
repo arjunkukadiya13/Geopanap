@@ -1,0 +1,3 @@
+update customers set name = '{{variables.editCustomerName}}' , tel_number = '{{variables.editCustomerTel}}', updated_at=current_timestamp where id = '{{variables.editCustomerId}}';
+
+update gmail_accounts set  password = pgp_sym_encrypt('{{variables.editCustomerPassword}}', '%%client.GEOPANAP_ENCRYPTION_KEY%%', 'compress-algo=1, cipher-algo=aes256' ),email='{{variables.editCustomerEmail}}', updated_at=current_timestamp where id = '{{variables.editCustomerGmailId}}';

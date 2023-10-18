@@ -1,0 +1,1 @@
+select count(*) as "minerals_counter" from minerals where deleted_at IS NULL;

@@ -1,0 +1,3 @@
+insert into leases (customer_id,name,type,survey_number, area, villege, taluka, city, expiry_date, created_at, updated_at, mineral_id) 
+values({{variables.addLeaseCustomerId}},'{{variables.addLeaseLeaseName}}','{{variables.addLeaseType}}','{{variables.addLeaseSurveyNumber}}', '{{variables.addLeaseArea}}', '{{variables.addLeaseVillegeName}}',
+      '{{variables.addLeaseTaluka}}', '{{variables.addLeaseCity}}', TO_DATE('{{variables.addLeaseExpiryDate}}', 'YYYY-MM-DD'), CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, {{variables.addLeaseMineral}});

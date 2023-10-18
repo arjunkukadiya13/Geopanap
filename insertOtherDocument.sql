@@ -1,0 +1,1 @@
+insert into other_documents (lease_id, path, size, mime_type, created_at) values({{variables.viewLeasesId}}, '{{variables.viewLeaseDocumentPath}}', '{{variables.viewLeaseDocumentSize}}', '{{variables.viewLeaseDocumentMimeType}}', current_timestamp);

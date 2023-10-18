@@ -1,0 +1,1 @@
+delete from other_documents where id={{variables.otherDocumentId}};

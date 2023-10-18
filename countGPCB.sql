@@ -1,0 +1,1 @@
+select count(*) as "GPCB_counter" from gpcb_records;

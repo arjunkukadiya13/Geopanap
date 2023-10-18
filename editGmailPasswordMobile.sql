@@ -1,0 +1,1 @@
+update gmail_accounts set  password = pgp_sym_encrypt('{{components.form2.data.inp_EpassMobile.value}}', '%%server.GEOPANAP_ENCRYPTION_KEY%%', 'compress-algo=1, cipher-algo=aes256' ) where email = '{{variables.customerdata3.email}}';

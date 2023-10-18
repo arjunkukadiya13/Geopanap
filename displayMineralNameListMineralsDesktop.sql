@@ -1,0 +1,1 @@
+SELECT name from minerals where id= {{variables.mineral_id}};

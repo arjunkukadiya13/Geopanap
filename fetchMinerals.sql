@@ -1,0 +1,1 @@
+select id, name from minerals where deleted_at is null;

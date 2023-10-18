@@ -1,0 +1,1 @@
+select count(*) as "leases_counter" from leases l where customer_id = {{variables.listCustomersLeaseCustomerId}};

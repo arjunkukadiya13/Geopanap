@@ -1,0 +1,1 @@
+select count(*) as "ECReports_counter" from ec_records;

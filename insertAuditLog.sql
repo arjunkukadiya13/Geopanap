@@ -1,0 +1,1 @@
+insert into audit_logs (subject, action, resource, object, created_at) values('{{variables.AUDIT_LOG_SUBJECT}}', '{{variables.AUDIT_LOG_ACTION}}', '{{variables.AUDIT_LOG_RESOURCE}}', '{{variables.AUDIT_LOG_OBJECT}}', CURRENT_TIMESTAMP);

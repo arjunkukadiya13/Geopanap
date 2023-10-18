@@ -1,0 +1,1 @@
+select id  from gmail_accounts where id = '{{components.table2.selectedRow.gmail_account_id}}';

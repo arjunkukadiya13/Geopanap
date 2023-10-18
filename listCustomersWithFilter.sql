@@ -1,0 +1,1 @@
+select id, name, tel_number, (select count(*) as "leases" from leases l where l.customer_id=c.id) from customers c where {{variables.searchKey}}::text like '%{{variables.searchTerm}}%';

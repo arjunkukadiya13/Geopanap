@@ -1,0 +1,1 @@
+delete from ec_documents where id={{variables.ecDocumentDeleteId}};
